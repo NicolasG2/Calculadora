@@ -1,0 +1,76 @@
+* {
+    font-family: fonte;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: fonte;
+    src: url("../fonts/Supernatural_Knight.ttf");
+}
+
+/* Paleta de cores
+#b9b2ae
+#0d191f
+#747670
+#3a4b4e
+#555b58
+#475965
+#86919c
+#8b9c9e
+#947c7c
+*/
+
+body {
+    background-color: #0d191f;
+    color: white;
+    text-align: center;
+}
+
+.calculadora {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 300px;
+    transform: translate(-50%, 50%);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#resultado {
+    width: 214px;
+    height: 30px;
+    background-color: white;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
+
+.botao, .botao_igual, .botao_zero {
+    background-color: #86919c;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.botao:hover, .botao_igual:hover, .botao_zero:hover {
+    background-color: #444c53;
+}
+
+.botao_igual {
+    height: 108px;
+}
+
+.botao_zero {
+    width: 108px;
+}
+
+.boneco {
+    background-image: url("../img/cavaleiro.png");
+    width: 100%;
+}
