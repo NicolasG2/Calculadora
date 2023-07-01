@@ -4,10 +4,10 @@ console.log(botaoTema);
 botaoTema.addEventListener("click", () => {
     let body = document.querySelector("body");
     let boneco = document.querySelector(".boneco");
-    let nav_link_active = document.querySelector(".nav-link.active");
-    let cards = document.querySelectorAll(".card");
-    let cards_descricao = document.querySelectorAll(".card-descricao");
-    let cards_botao = document.querySelectorAll(".card-botao");
+    let calculadora = document.querySelector(".calculadora");
+    let botao = document.querySelectorAll(".botao");
+    let botao_igual = document.querySelectorAll(".botao_igual");
+    let botao_zero = document.querySelectorAll(".botao_zero");
     let form = document.querySelector("form");
 
     if (botaoTema.checked) {
@@ -15,42 +15,25 @@ botaoTema.addEventListener("click", () => {
 
         boneco.classList.add("boneco-hornet");
 
-        nav_link_active.classList.add("nav-link-dark.active");
+        calculadora.classList.add("calculadora-hornet");
 
-        cards.forEach((card) => {
-            card.classList.add("card-dark");
-        });
+        botao.classList.add("botao-hornet");
 
-        cards_descricao.forEach((descricao) => {
-            descricao.classList.add("card-dark-descricao");
-        });
+        botao_igual.classList.add("botao_igual-hornet");
 
-        cards_botao.forEach((botao) => {
-            botao.classList.add("card-dark-botao");
-        });
-
-        form.classList.add("form-dark");
+        botao_zero.classList.add("botao_zero-hornet");
 
     } else {
         body.classList.remove("body-hornet");
-        header.classList.remove("header-dark");
 
         boneco.classList.remove("boneco-hornet");
 
-        nav_link_active.classList.remove("nav-link-dark.active");
+        calculadora.classList.remove("calculadora-hornet");
 
-        cards.forEach((card) => {
-            card.classList.remove("card-dark");
-        });
+        botao.classList.remove("botao-hornet");
 
-        cards_descricao.forEach((descricao) => {
-            descricao.classList.remove("card-dark-descricao");
-        });
+        botao_igual.classList.remove("botao_igual-hornet");
 
-        cards_botao.forEach((botao) => {
-            botao.classList.remove("card-dark-botao");
-        });
-
-        form.classList.remove("form-dark");
+        botao_zero.classList.remove("botao_zero-hornet");
     }
 });

@@ -1,5 +1,7 @@
 .body-hornet {
+    background-image: url("../img/hornet.png");
     background-color: #711817;
+    background-repeat: no-repeat;
 }
 
 .switch {
@@ -62,8 +64,31 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
+.calculadora-hornet {
+    position: absolute;
+    background-color: rgba(35, 26, 37, 0.8);
+    left: 300px;
+    transform: translate(-50%, 50%);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.botao-hornet, .botao_igual-hornet, .botao_zero-hornet {
+    background-color: #606368;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.botao-hornet:hover, .botao_igual-hornet:hover, .botao_zero-hornet:hover {
+    background-color: #444c53;
+}
+
 .boneco-hornet {
-    background-image: url("../img/hornet.png");
     position: relative;
     width: 50%;
     left: 250px;

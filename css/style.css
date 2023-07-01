@@ -22,7 +22,12 @@
 */
 
 body {
+    background-image: url("../img/cavaleiro.png");
     background-color: #0d191f;
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
     color: white;
     text-align: center;
 }
@@ -68,9 +73,4 @@ body {
 
 .botao_zero {
     width: 108px;
-}
-
-.boneco {
-    background-image: url("../img/cavaleiro.png");
-    width: 100%;
 }
